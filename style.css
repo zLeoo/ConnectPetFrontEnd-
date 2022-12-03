@@ -1,0 +1,415 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html, body {height: 100%;}
+body{
+    background-color: #FBFBFB;
+}
+
+.logo a{
+    color: #F9A870;
+}
+.logo .logo-title{
+    font-weight: 700;
+    font-size: 42px;
+    color: #F9A870;
+    cursor: pointer;
+}
+
+
+.highlight-title{
+    color: #213A8F;
+}
+
+.btn-small{
+    width: 130px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.btn-medium{
+    width: 240px;
+    height: 78px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.btn-primary{    
+    border-radius: 8px;
+    color: #FFFF;
+    background-color: #F9A870;
+    border: 2px solid #F9A870 ;
+    cursor: pointer;
+}
+
+.btn-primary:hover{
+    color: #F9A870;
+    background-color: #FFFF;
+    
+}
+
+.btn-secondary{    
+    border-radius: 8px;
+    color: #213A8F;
+    background-color: #FFFF;
+    border: 2px solid #213A8F ;
+    cursor: pointer;
+}
+
+.btn-secondary:hover{
+    color: #FFFF;
+    background-color: #213A8F;
+    
+}
+
+.btn-danger{
+    border-radius: 8px;
+    color: #FFFF;
+    background-color: #c57c47;
+    border: 2px solid #c57c47 ;
+}
+
+.btn-danger:hover{
+    color: #c57c47;
+    background-color: #FFFF;
+    
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 64px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.046);
+}
+
+.home-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+}
+
+.home-container > *{
+    margin-left: 128px;
+}
+
+
+.feed-title{
+    margin: 32px 0 32px 64px;
+    font-weight: 600;
+    font-size: 27px;
+}
+
+.feed-container{
+    margin: 0 64px;
+    display: grid;
+    
+    /* grid-template-columns: repeat(5, auto); */
+    grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+    grid-column-gap:64px;
+    grid-row-gap: 64px;
+    
+    
+}
+
+.card{
+    border-radius: 8px;
+    background-color: #FFFF;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,.2);
+    height: 100%;
+    position: relative;
+}
+
+.card img{
+    width: 100%;
+    height: 200px;
+}
+.card .imagem{
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+}
+
+.card .card-body{
+    padding: 16px;
+}
+
+.card h2{
+    font-weight: 400;
+    font-size: 21px;
+    margin-bottom: 8px;
+    
+}
+.card h3{
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 4px;
+    
+}
+
+
+.banner{
+    width: 100%;
+    background-image: url('./img/banner.jpg');
+    background-position: center;
+    height: 335px;
+}
+
+
+.form-pet{
+    width: 436px;
+    margin: auto;
+    background-color: #FFFF ;
+    border-radius: 8px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,.2);
+    
+   
+
+}
+
+.form-pet h2{
+    margin-bottom: 32px;
+}
+
+.form-pet > input{
+    background-color: #EAEAEA;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    padding: 16px ;
+    color: #807272;
+}
+
+
+.form-pet button, .form-pet a{
+    padding: 16px ;
+    margin-top: 8px;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.form-pet input{
+    font-size: 14px;
+}
+
+input:focus{
+    outline: 1px solid rgb(114, 109, 248);
+}
+
+
+select {
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #EAEAEA;
+    border: none;
+    color: #807272;
+    
+    padding: 16px ;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin-bottom: 16px;
+  }
+ 
+  input:focus,
+  input:hover,
+select:hover,
+select:focus {
+
+    border: none;
+    outline: 1px solid #dddddd;
+}
+  /* For IE <= 11 */
+  select::-ms-expand {
+    display: none; 
+  }
+
+
+
+  .showLeft{
+   
+    text-shadow: none !important;
+    color:#fff !important;
+    
+}
+
+.icons li {
+    background: none repeat scroll 0 0 #fff;
+    height: 5px;
+    width: 5px;
+    line-height: 0;
+    list-style: none outside none;
+    margin-top: 3px;
+    vertical-align: top;
+    border-radius:50%;
+    pointer-events: none;
+}
+
+.btn-left, .btn-right {
+    position: relative;
+    top: 16px;
+}
+
+.dropbtn {
+
+    
+  
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    
+}
+
+.dropdown {
+    position: absolute;
+
+    display: inline-block;
+    right: 16px;
+    z-index: 10;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+
+    margin-top: 30px;
+    
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    width: 10px;
+    align-self: flex-end;
+    margin-top: -20px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.delete-modal{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.delete-pet{
+    width: 426px;
+    margin: auto;
+    background-color: #FFFF ;
+    border-radius: 8px;
+    padding: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,.2);
+    
+   
+
+}
+
+
+.delete-pet .btn-container{
+    display: flex;
+    margin-top: 16px;
+    width: 100%;
+}
+
+.delete-pet button{
+    padding: 16px ;
+    margin-right: 16px;
+    margin-left: 16px;
+    transition: 0.3s;
+    font-size: 14px;
+    width: 100%;
+    cursor: pointer;
+   
+}
+
+.banner-inicial{
+        width: 100%;
+        background-image: url('./img/dog-banner.jpg');
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;    
+}
+
+.banner-inicial > h1{
+    font-size: 42px;
+    color: #fff;
+    width: 650px;
+    padding:128px 0 0 64px ;
+}
+
+
+

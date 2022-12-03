@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect Pet</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        
+      
+
+        
+    </script>
+</head>
+<body>
+     <header class="header-container">
+        <div class="logo">
+            
+            <h1 class="logo-title">
+                <a>Connect<span class="highlight-title">Pet</span></a>
+            </h1>   
+            
+        </div>
+        <div class="btn-container">
+            <a href="./home.html" class=" btn-secondary btn-small">Voltar</a> 
+        </div>
+    </header>
+    <h1 class="feed-title">Pets Disponíveis</h1>
+    <div class="feed-container" id="feed-container">
+       
+    </div>
+
+    <div id="editModal" class="modal">
+
+        <div class="form-pet">
+            <span class="close">&times;</span>
+            <h2>Editar Animal</h2>
+            
+            <input type="text" id="nome" name="nome" placeholder="Nome" required>
+            <select id="especie" required>
+                <option value="">Espécie</option>
+                <option value="Cachorro">Cachorro</option>
+                <option value="Gato">Gato</option>
+            </select>
+            <select id="sexo" required>
+                <option value="">Sexo</option>
+                <option value="Macho">Macho</option>
+                <option value="Fêmea">Fêmea</option>
+            </select>
+            <input type="number" min="0" id="idade" name="idade" placeholder="Idade" required>
+            <input type="email" id="email" name="email" placeholder="Email para contato" required>
+            <input type="file" id="imagem" name="imagem" placeholder="Foto" accept="image/png, image/gif, image/jpeg" required>
+            <button id="atualizar-doacao" class="btn-primary">Enviar</button>
+        </div>
+      
+    </div>
+
+    <div id="deleteModal" class="delete-modal">
+
+        <div class="delete-pet">
+            <span class="close">&times;</span>
+            <p>Tem certeza que deseja deletar a doação?</p>
+            <div class="btn-container">
+                <button id="cancelar" class="btn-primary">Cancelar</button> 
+                <button id="deletar-doacao" class="btn-danger">Deletar</button>
+            </div>
+        </div>
+      
+    </div>
+
+    
+    <script src="./feed.js"></script>
+</body>
+</html>
